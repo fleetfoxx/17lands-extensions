@@ -1,0 +1,15 @@
+{
+  "name": "17lands-extensions",
+  "version": "1.2.1",
+  "description": "Extensions for 17Lands",
+  "main": "extensions.js",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./src --start-url www.17lands.com",
+    "build": "cd ./src && web-ext build --overwrite-dest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "web-ext": "^6.7.0"
+  }
+}
