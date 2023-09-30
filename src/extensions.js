@@ -23,11 +23,9 @@ const injectCardRatingsExtensions = () => {
   searchBarElement.placeholder = "Filter by Name...";
   searchBarElement.oninput = filterTable;
 
-  const setSelectorElement = document.getElementById("expansion");
-  const userFilterElement = setSelectorElement.parentNode.parentNode;
-
-  // const userFilterElement = document.querySelector("div.user-filter");
-  userFilterElement.parentNode.insertBefore(searchBarElement, userFilterElement.nextSibling);
+  const cardPerformanceSelectors = document.querySelector(".card-performance-selectors");
+  const parent = cardPerformanceSelectors.parentNode;
+  parent.insertBefore(searchBarElement, cardPerformanceSelectors);
 };
 
 let timerId = null;
